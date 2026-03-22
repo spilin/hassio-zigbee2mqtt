@@ -1,5 +1,5 @@
 {
-  "name": "Home Assistant App: Zigbee2MQTT",
+  "name": "Zigbee2MQTT extra instances (Garage, Apartment, Balcony, Gazebo, Attic)",
   "url": "https://github.com/zigbee2mqtt/hassio-zigbee2mqtt",
   "maintainer": "Koen Kanters <koenkanters94@gmail.com>"
 }

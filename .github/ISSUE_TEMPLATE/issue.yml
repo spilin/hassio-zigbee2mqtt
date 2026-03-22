@@ -11,7 +11,7 @@ body:
     id: version
     attributes:
       label: Addon version
-      description: If you are using edge, please report commit hash.
+      description: Add-on version from the Info tab (e.g. Zigbee2MQTT or Zigbee2MQTT Garage).
       placeholder: 'v1.22.1'
     validations:
       required: true
