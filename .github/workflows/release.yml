@@ -25,7 +25,7 @@ jobs:
     - name: Set version and update release
       run: |
         set -euo pipefail
-        ADDONS=(zigbee2mqtt-garage zigbee2mqtt-apartment zigbee2mqtt-balcony zigbee2mqtt-gazebo zigbee2mqtt-attic)
+        ADDONS=(zigbee2mqtt-garage zigbee2mqtt-apartment zigbee2mqtt-balcony zigbee2mqtt-gazebo zigbee2mqtt-attic zigbee2mqtt-mc zigbee2mqtt-temp)
         for addon in "${ADDONS[@]}"; do
           jq '.version = "${{ steps.version.outputs.addon }}"' "$addon/config.json" > "$addon/config.json.tmp"
           mv "$addon/config.json.tmp" "$addon/config.json"
@@ -40,5 +40,5 @@ jobs:
         tag: "v${{ steps.version.outputs.addon }}"
         body: |
           - Bumped add-on metadata version to match Zigbee2MQTT [`${{ steps.version.outputs.z2m }}`](https://github.com/Koenkk/zigbee2mqtt/releases/tag/${{ steps.version.outputs.z2m }}) (same Docker image as official add-on: `ghcr.io/zigbee2mqtt/zigbee2mqtt-{arch}`).
-          - Updated: **Garage**, **Apartment**, **Balcony**, **Gazebo**, **Attic**.
+          - Updated: **Garage**, **Apartment**, **Balcony**, **Gazebo**, **Attic**, **MC**, **Temp**.
         token: ${{ secrets.GH_TOKEN }}

@@ -1,6 +1,6 @@
 <div align="center">
     <h1>Zigbee2MQTT — extra Home Assistant instances</h1>
-    <p>Garage, apartment, balcony, gazebo, and attic add-ons using the <strong>official</strong> Zigbee2MQTT image.</p>
+    <p>Garage, apartment, balcony, gazebo, attic, mc, and temp add-ons using the <strong>official</strong> Zigbee2MQTT image.</p>
 </div>
 
 > [!CAUTION]
@@ -22,6 +22,8 @@
 | **Balcony** | `zigbee2mqtt_balcony` | `/config/zigbee2mqtt_balcony` | 8488 | 8102 |
 | **Gazebo** | `zigbee2mqtt_gazebo` | `/config/zigbee2mqtt_gazebo` | 8489 | 8103 |
 | **Attic** | `zigbee2mqtt_attic` | `/config/zigbee2mqtt_attic` | 8490 | 8104 |
+| **MC** | `zigbee2mqtt_mc` | `/config/zigbee2mqtt_mc` | 8491 | 8105 |
+| **Temp** | `zigbee2mqtt_temp` | `/config/zigbee2mqtt_temp` | 8492 | 8106 |
 
 Use a **different MQTT `base_topic`** for every instance.
 
@@ -32,13 +34,13 @@ Put **`icon.png`** and **`logo.png`** in each add-on folder next to **`config.js
 ### Using this fork
 
 1. Edit **`repository.json`** and set **`url`** to your GitHub repo.
-2. If you ever point **`image`** at your own registry, update it in every `config.json` in this repo.
+2. If you ever point **`image`** at your own registry, update it in every add-on `config.json` in this repo (all seven folders).
 
 ## Installation
 
 1. Install an MQTT broker if needed (e.g. **Mosquitto** from the Home Assistant add-on store).
 2. Add the **official** Zigbee2MQTT repository and install **Zigbee2MQTT** from [here](https://github.com/zigbee2mqtt/hassio-zigbee2mqtt).
-3. **Add-on store → ⋮ → Repositories** — add **this** repository URL, then install any of **Garage**, **Apartment**, **Balcony**, **Gazebo**, **Attic** as needed.
+3. **Add-on store → ⋮ → Repositories** — add **this** repository URL, then install any of **Garage**, **Apartment**, **Balcony**, **Gazebo**, **Attic**, **MC**, **Temp** as needed.
 4. Start each add-on, open the web UI, complete onboarding, and assign a **unique** `base_topic` per instance.
 
 More detail: [Zigbee2MQTT getting started](https://www.zigbee2mqtt.io/guide/getting-started/#onboarding).
@@ -50,6 +52,8 @@ More detail: [Zigbee2MQTT getting started](https://www.zigbee2mqtt.io/guide/gett
 - [zigbee2mqtt-balcony/CHANGELOG.md](zigbee2mqtt-balcony/CHANGELOG.md)
 - [zigbee2mqtt-gazebo/CHANGELOG.md](zigbee2mqtt-gazebo/CHANGELOG.md)
 - [zigbee2mqtt-attic/CHANGELOG.md](zigbee2mqtt-attic/CHANGELOG.md)
+- [zigbee2mqtt-mc/CHANGELOG.md](zigbee2mqtt-mc/CHANGELOG.md)
+- [zigbee2mqtt-temp/CHANGELOG.md](zigbee2mqtt-temp/CHANGELOG.md)
 
 ## Issues
 

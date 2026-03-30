@@ -15,5 +15,11 @@ zigbee2mqtt-gazebo/build.yaml
 zigbee2mqtt-attic/rootfs
 zigbee2mqtt-attic/Dockerfile
 zigbee2mqtt-attic/build.yaml
+zigbee2mqtt-mc/rootfs
+zigbee2mqtt-mc/Dockerfile
+zigbee2mqtt-mc/build.yaml
+zigbee2mqtt-temp/rootfs
+zigbee2mqtt-temp/Dockerfile
+zigbee2mqtt-temp/build.yaml
 zigbee2mqtt-local/*
 .DS_Store
