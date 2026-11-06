@@ -10,11 +10,7 @@ Home Assistant Supervisor loads these from **the same directory as `config.json`
 Place both files in **each** add-on folder you use:
 
 - `zigbee2mqtt-garage/`
-- `zigbee2mqtt-apartment/`
 - `zigbee2mqtt-balcony/`
-- `zigbee2mqtt-gazebo/`
-- `zigbee2mqtt-attic/`
 - `zigbee2mqtt-mc/`
-- `zigbee2mqtt-temp/`
 
 You can use the same artwork as the [official Zigbee2MQTT add-on](https://github.com/zigbee2mqtt/hassio-zigbee2mqtt/tree/master/zigbee2mqtt) or your own — commit them in this repo so the store shows them after you push.

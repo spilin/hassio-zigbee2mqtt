@@ -1,6 +1,6 @@
 {
   "name": "Zigbee2MQTT Balcony",
-  "version": "2.9.1-1",
+  "version": "2.14.3-1",
   "slug": "zigbee2mqtt_balcony",
   "description": "Extra Zigbee2MQTT instance for balcony (separate coordinator, data folder, and host ports)",
   "breaking_versions": [
@@ -34,9 +34,13 @@
       "path": "/config"
     },
     {
-      "type": "addon_config",
+      "type": "app_config",
       "read_only": false,
       "path": "/addon_config"
+    },
+    {
+      "type": "ssl",
+      "read_only": true
     }
   ],
   "ports": {

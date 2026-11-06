@@ -14,7 +14,7 @@ jobs:
       - name: Validate add-on config.json files
         run: |
           set -euo pipefail
-          for dir in zigbee2mqtt-garage zigbee2mqtt-apartment zigbee2mqtt-balcony zigbee2mqtt-gazebo zigbee2mqtt-attic zigbee2mqtt-mc zigbee2mqtt-temp; do
+          for dir in zigbee2mqtt-garage zigbee2mqtt-balcony zigbee2mqtt-mc; do
             test -f "$dir/config.json"
             jq empty "$dir/config.json"
             echo "OK: $dir/config.json"
